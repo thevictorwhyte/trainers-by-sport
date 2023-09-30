@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent implements OnInit {
-  @Input() variant!: 'primary' | 'outline';
+  @Input() variant: 'primary' | 'outlined' = 'primary';
   @Input() text!: string;
 
   constructor() {}

@@ -1,8 +1,18 @@
-button {
-    background-color: var(--primary-color);
+.button {
+    
     border: none;
     cursor: pointer;
     border-radius: 1000px;
     color: white;
     padding: 1rem 1.2rem ;
+
+    &.primary {
+        background-color: var(--primary-color);
+    }
+
+    &.outlined {
+        background-color: transparent;
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+    }
 }
