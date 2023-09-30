@@ -1,0 +1,86 @@
+.trainer-card-container {
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    &__image {
+        width: 100%;
+        aspect-ratio: 1 / 0.55;
+        border-radius: 20px;
+        background-color: var(--gray-600);
+    }
+
+    &__content {
+        padding: 1.5rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        
+
+    }
+}
+
+.name {
+    font-size: 1.1rem;
+    color: #020202;
+    font-weight: 500;
+}
+
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: red;
+    margin-top: 5px;
+
+    &__icon {
+        font-size: .9rem;
+    }
+
+    &__text {
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 8px;
+
+    &__icon {
+        color: var(--secondary-color);
+    }
+
+    &__text {
+        color: var(--gray-700);
+        font-size: 0.85rem;
+        padding-right: 8px;
+        border-right: 1px solid #E0E0E0;
+    }
+
+    &__review {
+        color: var(--gray-600);
+        font-size: 0.85rem;
+    }
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 0.85rem;
+    margin-top: 10px;
+
+    &__rate {
+        color: #020202;
+    }
+}

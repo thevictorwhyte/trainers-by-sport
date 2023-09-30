@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { faBasketball, faStar } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-trainer-card',
@@ -6,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./trainer-card.component.scss']
 })
 export class TrainerCardComponent {
-
+  faBasketball = faBasketball;
+  faStar = faStar;
 }
