@@ -1,22 +1,24 @@
 <div class="trainer-card-container">
-    <div class="trainer-card-container__image"></div>
+    <div class="trainer-card-container__image">
+        <img [src]="trainer.imgSrc" alt="Trainer image" style="width: 100%; object-fit: cover;" />
+    </div>
     <div class="trainer-card-container__content">
-        <h2 class="name">Brain Mallow</h2>
+        <h2 class="name">{{trainer.name}}</h2>
         <div class="icon-wrapper">
-            <fa-icon [icon]="faBasketball" class="icon-wrapper__icon"></fa-icon>
-            <span class="icon-wrapper__text">Basketball</span>
+            <fa-icon [icon]="trainer.icon" class="icon-wrapper__icon"></fa-icon>
+            <span class="icon-wrapper__text">{{trainer.sport}}</span>
         </div>
 
         <div class="rating">
             <fa-icon [icon]="faStar" class="rating__icon"></fa-icon>
-            <span class="rating__text">4.5</span>
-            <span class="rating__review">34 reviews</span>
+            <span class="rating__text">{{trainer.rating}}</span>
+            <span class="rating__review">{{trainer.numOfReviews}} reviews</span>
         </div>
         
         <div class="bottom">
-            <p>$20 <span style="color: var(--gray-600);">/hr</span></p>
+            <p>${{trainer.ratePerHour}} <span style="color: var(--gray-600);">/hr</span></p>
 
-            <p>New Delhi, <span style="color: var(--gray-600);">India</span></p>
+            <p>{{trainer.city}}, <span style="color: var(--gray-600);">{{trainer.country}}</span></p>
         </div>
     </div>
 </div>

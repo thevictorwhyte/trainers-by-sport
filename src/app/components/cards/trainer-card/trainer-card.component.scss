@@ -5,14 +5,18 @@
     transition: all .2s;
 
     &:hover {
-        transform: translateY(-5px);
+        .trainer-card-container__image img {
+            transform: scale(1.1); 
+            transition: all .2s;
+        }
     }
 
     &__image {
         width: 100%;
         aspect-ratio: 1 / 0.55;
         border-radius: 20px;
-        background-color: var(--gray-600);
+        overflow: hidden;
+        transition: transform 0.2s;
     }
 
     &__content {

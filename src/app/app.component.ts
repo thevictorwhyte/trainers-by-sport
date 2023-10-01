@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Trainers, Trainer } from 'src/lib/mocks';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  trainers: Trainer[] = Trainers;
   title = 'trainers-by-sport';
 }

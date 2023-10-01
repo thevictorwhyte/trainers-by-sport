@@ -1,4 +1,4 @@
-header {
+.header {
     width: 100%;
     padding: 1rem 1.5rem;
     // position: fixed;
@@ -8,10 +8,14 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    & nav {
+    &__nav {
         display: flex;
         align-items: center;
         gap: 30px;
+
+        @media (max-width: 425px) {
+            display: none;
+        }
     }
 
     & nav ul {
@@ -44,5 +48,5 @@ header {
     display: flex;
     align-items: center;
     gap: 20px;
+   
 }
-

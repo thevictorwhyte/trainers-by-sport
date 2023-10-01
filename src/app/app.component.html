@@ -3,12 +3,7 @@
   <main>
     <app-search-bar></app-search-bar>
     <div class="trainers-container">
-      <app-trainer-card></app-trainer-card>
-      <app-trainer-card></app-trainer-card>
-      <app-trainer-card></app-trainer-card>
-      <app-trainer-card></app-trainer-card>
-      <app-trainer-card></app-trainer-card>
-      <app-trainer-card></app-trainer-card>
+      <app-trainer-card *ngFor="let trainer of trainers" [trainer]="trainer"></app-trainer-card>
     </div>
   </main>
 </div>
