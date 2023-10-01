@@ -6,13 +6,15 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ButtonComponent } from './components/ui/button/button.component';
 import { TrainerCardComponent } from './components/cards/trainer-card/trainer-card.component';
 import { HeaderComponent } from './components/layout/header/header.component';
+import { SearchBarComponent } from './components/layout/search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ButtonComponent,
     TrainerCardComponent,
-    HeaderComponent
+    HeaderComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule, 

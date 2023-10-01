@@ -4,7 +4,14 @@
     background: radial-gradient(52.52% 28.1% at 97.71% 37.35%, rgba(105, 68, 254, 0.08) 0%, rgba(105, 68, 254, 0.00) 100%), radial-gradient(73.7% 42.87% at 4.37% 35.69%, rgba(255, 210, 51, 0.09) 0%, rgba(255, 210, 51, 0.00) 100%), #F4F4F4;
 }
 
-.main-container {
+main {
+    width: 100vw;
+    max-width: 2000px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.trainers-container {
     width: 100%;
     padding: 0rem 5rem;
     padding-bottom: 5rem;
